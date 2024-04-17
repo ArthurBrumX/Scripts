@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores parte 2</title>
+</head>
+<body>
+    <h1>Operadores dessa aula</h1>
+    <ul>
+        <li>Relacionais</li>
+        <li>Lógicos</li>
+        <li>Ternario</li>
+    </ul>
+
+    <h1>Operadores Relacionais</h1>
+    <ul>
+        <li>(>) - Maior</li>
+        <li>(<) - Menor</li>
+        <li>(>=) - Maior Igual</li>
+        <li>(<=) - Menor Igual</li>
+        <li>(==) - Igual</li>
+        <li>(!=) - Diferente</li>
+
+        <p>Qualquer teste feito com Qualquer um dos operadores irá resultar em um valor Logico (Booleano - Verdadeiro ou Falso)</p>
+    </ul>
+
+    <h2>Exemplo</h2>
+    <ul>
+        <li> 5 > 2 -> True</li> <!--5 é maior que 2?-->
+        <li> 7 < 4 -> False</li> <!--7 é menor que 4?-->
+        <li> 8 >= 8 -> True</li> <!--8 é maior ou igual que 8?-->
+        <li> 9 <= 7 -> False</li> <!--9 é menor ou igual que 7?-->
+        <li> 5 == 5 -> True</li> <!--5 é igual que 5?-->
+        <li> 4 != 4 -> False</li> <!--4 é diferente que 4?-->
+    </ul>
+
+    <h2>Operador de identidade</h2>
+    <p>Operador de identidade -> (===)</p>
+    <ul>
+        <li>5 == 5 -> True</li> <!--5 é igual a 5?-->
+        <li>5 == '5' -> True</li> <!--5 é igual a '5'?-->
+        <li>5 === '5' -> False</li> <!--5 é Identico a '5'?-->
+        <li>5 === 5 -> True</li> <!--5 é Identico a '5'?-->
+        <!--Teste se os valores sao iguais em suas identidades-->
+    </ul>
+
+    <h1>Operadores Logicos</h1>
+    <ul>
+        <li>! - Negacao</li> <!--(NÃO) - NÃO LOGICO-->
+            <ul>
+                <li>! = True -> False (Uma coisa não verdadeira é falsa)</li>
+                <li>! = False -> True (Uma coisa não falsa é verdadeira)</li>
+            </ul>
+
+        <li>&& - Conjuncao (e)</li> <!--(E) - lOGICO-->
+            <ul>
+                <li>True && True -> True</li><!--nesse operaador (e), sao precisos ser dois verdadeiros pro resultado logico ser verdadeiro-->
+                <li>True && False ->False</li>
+                <li>False && True -> False</li>
+                <li>False && False -> False</li>
+            </ul>
+
+        <li>||- Dijuncao (ou)</li> <!--(OU) - LOGICO-->
+            <ul>
+                <li>True || True -> True</li>
+                <li>True || False-> True</li><!--Nesse operador (ou), Sao precisos apenas um para o resultado logico ser verdadeiro-->
+                <li>False || True -> True</li>
+                <li>False || False -> False</li>
+            </ul>
+    </ul>
+
+    <h1>Ordem de Recedencia dos Operadores</h1>
+    <ol>
+        <li>Aritmeticos - (),**, /</li>
+        <li>Relacionais - >, <, >=</li>
+        <li>Logicos - !, &&, ||</li>
+            <ol>
+                <li>! - Negacao</li>
+                <li>&& - Conjunção</li>
+                <li>|| - Dijunção</li>
+            </ol>
+    </ol>
+
+    <h1>Operador Ternario</h1>
+    <p>Teste (?) True (:) False</p>
+    <ul>
+        <p>teste - Um Teste Logico</p>
+        <p>(?) True - Oque vai acontecer se o teste for Verdadeiro</p>
+        <p>(:) False - Oque Vai acontecer se o teste for Falso</p>
+    </ul>
+    <p>media>=7.0 ? "Aprovado" : "Reprovado"</p> 
+        <!--Se o teste Logico for verdadeiro - Aprovado-->
+        <!--Se o teste Logico For Falso - Reprovado-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

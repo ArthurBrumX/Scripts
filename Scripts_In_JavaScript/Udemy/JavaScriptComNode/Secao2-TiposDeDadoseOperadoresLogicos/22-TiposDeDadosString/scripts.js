@@ -1,0 +1,11 @@
+console.log("Oi, meu nome é Arthur!")
+console.log('Eu queria Comprar um carro.')
+console.log(`Teste`)
+console.log("Infinity")
+console.log(Infinity)
+
+console.log(typeof ("Oi, meu nome é Arthur!"))
+console.log(typeof ('Eu queria Comprar um carro.'))
+console.log(typeof (`Teste`))
+console.log(typeof ("Infinity"))
+console.log(typeof (Infinity))

@@ -1,0 +1,15 @@
+{
+    "name": "user/vagas",
+    "autoload": {
+        "psr-4": {
+            "User\\Vagas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arthur Brum Xavier",
+            "email": "98411287+ArthurBrumX@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}

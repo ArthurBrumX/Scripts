@@ -1,0 +1,4 @@
+# primeiro programa em python dizendo "Olá, Mundo!" na tela.
+
+print ("Olá, Mundo!") 
+    # comando de saida (print)

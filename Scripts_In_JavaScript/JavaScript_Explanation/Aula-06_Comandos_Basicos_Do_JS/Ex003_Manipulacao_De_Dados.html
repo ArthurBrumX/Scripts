@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--Para gerar um corpo em html no vscode (! + "Enter"), (html + "Enter")-->
+<head>
+    <!--Essa parte é a cabeça do codigo (Head)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        /*Éssa parte inteira de estilo é em CSS*/
+        body {
+            background-color: rgb(88, 88, 176);
+            color: wheat;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(207, 207, 42);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+    <script>
+        /*
+
+            Var n1 = window.prompt('Digite um numero: ') //mesmo usando numero, o comando entende que é uma string
+
+            Var n2 = window.prompt("Digite outro numero: ") // oque vai acontecer vai ser uma concatenacao
+
+            var s = n1 + n2 // Ao inves de acontecer a soma de valores, eles vao se unir. ex: 2 + 2 = 22
+
+        */
+
+       /*
+
+        para forcar que o programa entenda que é pra acontecer soma entre numero pode ser usado dois domandos
+
+            Number.parseInt(n) // para forcar que o programa entenda que é um numero inteiro
+            Number.parcefloat(n) // para forcar que o programa entenda que é um numero real (Com virgula)
+            Number(n) // para deixar com que o JS decida da melhor forma.
+
+       */
+
+        //Sem o uso de template string
+
+        /*
+            var n1 = Number (window.prompt('Digite um numero: ')) //String
+            var n2 = Number (window.prompt ('Digite outro numero')) //String
+            var s = n1 + n2
+            window.alert("a soma dos valores é " + s ) // Concatenacao
+
+        // Não esquecer que tem comandos com letras maiusculas se nao, o programa nao roda.
+
+        // (number + number) para adicao
+
+        // (string + string) para concatenacao
+
+        */
+       
+        var n1 = Number (window.prompt('Digite um numero: ')) 
+        var n2 = Number (window.prompt ('Digite outro numero'))
+        var s = n1 + n2
+
+        //Formatacao de String
+        window.alert(`a soma entre ${n1} e ${n2} é igual a ${s}`) //fazendo uso do template string - ${}
+        //Só funciona se for usado dentro de crazes -> ( `` )
+
+    </script>
+</body>
+</html>

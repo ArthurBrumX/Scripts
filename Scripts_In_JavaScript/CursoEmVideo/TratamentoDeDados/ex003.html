@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa...</title>
+    <style>
+        body{
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt arial;
+        }
+        h1{
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me Livrei da maldição</p>
+
+    <script> 
+        // Tudo que estiver aq dentro é considerado JavaScript
+
+        // Não Esquecer Que JS é CaseSensitive
+        var nome = "Arthur"
+        var n1 = Number(window.prompt("Digite um Numero: "))
+        var n2 = Number(window.prompt("Digite Outro Numero: "))
+        var soma = n1 + n2
+        alert(`A soma dos valores ${n1} e ${n2} é igual a ${soma}`)
+        // + Para Adção
+        // + Para Concatenação
+
+        // (number + Number) = Adicao
+        // (string + String) = Concatenacao
+
+        // Tem q converter
+            // para converter para Numero:
+                // Para Numero Inteiro (Number.parceInt)
+                // Para Numero Real (Number.parceFloat)
+                // Para Deixar o JS Escolher (Number)
+
+            // para converter para String:
+                // string(nomeDaVariavel)
+                // nomedavariavel.string
+
+        // Usar Template String
+            // ${nome da variavel} - Só funciona com crazes
+        
+        alert(nome.length) // Conta quantos caracteres tem na variavel
+        alert(nome.toUpperCase()) // Colocar tudo em maiusculo
+        alert(nome.toLowerCase()) // Colocar tudo em minusculo
+    </script>
+</body>
+</html>
