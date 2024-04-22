@@ -79,19 +79,27 @@ console.log(x === y) // x é identico a y (vai verificar o tipo e o valor)
 console.log(x !== y) // x é identico a y (vai verificar o tipo e o valor)
 console.log(x != y) // x é diferente de y
 
+//-----------------------------------------------------------------------------------------------
+
 // Operadores Logicas
+console.log("Operadores Logicos")
 
 // AND -> && (e - Logico (Um teste **E** o outro tem que ser verdadeiro))
+    // No operador logico "e" dos dois lados tem que ser verdadeiro para que o resultado seja verdadeiro
+
 // or -> || (ou - logico (Um teste **OU** outro tem que ser Verdadeiro))
+    // NO operador logico "Ou" apenas um dos dois lados tem que ser verdadeiro para que o resultado seja verdadeiro
 
 // Os dois testes logicos tem que ser verdadeiro
 console.log(10 > 5 && 20 > 5) // Verdadeiro
-console.log(10 > 5 && 20 < 5) // Falso
-console.log(10 < 5 && 20 < 5) // falso
+console.log(10 < 5 && 20 < 5) // Falso
+console.log(10 > 5 && 20 < 5) // falso
+console.log(10 < 5 && 20 > 5) // falso
 
 // Apenas Um dos dois testes logicos tem que ser verdadeiro
 console.log(10 > 5 || 20 > 5) // Verdadeiro
 console.log(10 > 5 || 20 < 5) // Verdadeiro
+console.log(10 < 5 || 20 > 5) // Verdadeiro
 console.log(10 < 5 || 20 < 5) // Falso
 
 
