@@ -154,11 +154,67 @@ console.log(stringConvertida4,"=",typeof(stringConvertida4));
 
 //-----------------------------------------------------------------------------------------------
 
-console.log("Estrutura Condicional") // If, Else, Else If
+console.log("Estrutura Condicional"); // If, Else, Else If
+
+// Estrutura Condicional!
 
 
+//Exemplo 1
+const idade = 20; // Variavel declarada com um valor!
 
+// A estrutura condicional só sera atendida se o valor de comparacao ou a expressao for VERDADEIRA
+// Caso o contrario ele passa pro proximo
+// Se caso nao houver nenhum verdadeiro o script ignora a expressao
 
+if (idade < 13){ // SE (if) o valor da Variavel Idade For MENOR que 13
+    console.log("Crianca!"); // Se a Condicao de cima for atendida -> Imprima
+
+//Se caso a alternativa de cima nao seja verdadeira ele vai testar a proxima
+// Até ser verdadeira
+} else if(idade < 20){ // SE NÃO SE (else if) o valor da variavel Idade For MENOR que 20
+    console.log("Adolecente!"); // Se a condicao de cima for atendida -> Imprima
+
+// Se nenhuma das condicoes anteriores funcionou, faça isso
+}else{ // SeNão (else)
+    // Essa condicao só vai ser executada se nenhuma outra condicao acima for atendida
+    console.log("Adulto!");
+}
+
+// ----------------
+
+//Exemplo 2
+
+if(true){
+    console.log("Isso será Exibido!")
+}else{
+    console.log("Isso não será Exibido")
+}
+
+// ----------------
+
+//Exemplo 3
+
+if(false){
+    console.log("Isso nao será Exibido!");
+}else{
+    console.log("Porem, Isso será Exibido");
+}
+
+// ----------------
+
+//Exemplo 4
+
+let numero1 = 55
+let numero2 = 27
+let expressaoCondicional = numero1 * numero2
+
+console.log(expressaoCondicional)
+if(expressaoCondicional >= 1000){
+    console.log("Verdadeiro")
+}else{
+    console.log("False")
+}
+//-----------------------------------------------------------------------------------------------
 
 
 
