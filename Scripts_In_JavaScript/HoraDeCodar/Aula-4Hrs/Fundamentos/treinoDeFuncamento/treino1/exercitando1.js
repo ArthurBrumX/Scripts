@@ -185,9 +185,9 @@ if (idade < 13){ // SE (if) o valor da Variavel Idade For MENOR que 13
 //Exemplo 2
 
 if(true){
-    console.log("Isso será Exibido!")
+    console.log("Isso será Exibido!");
 }else{
-    console.log("Isso não será Exibido")
+    console.log("Isso não será Exibido");
 }
 
 // ----------------
@@ -204,17 +204,223 @@ if(false){
 
 //Exemplo 4
 
-let numero1 = 55
-let numero2 = 27
-let expressaoCondicional = numero1 * numero2
+let numero1 = 55;
+let numero2 = 27;
+let expressaoCondicional = numero1 * numero2;
 
-console.log(expressaoCondicional)
+console.log(expressaoCondicional);
 if(expressaoCondicional >= 1000){
-    console.log("Verdadeiro")
+    console.log("Verdadeiro");
 }else{
-    console.log("False")
+    console.log("False");
 }
 //-----------------------------------------------------------------------------------------------
+
+console.log("Switch case");
+
+// Vai avaliar a variavel e caso ela for verdade em um dos blocos
+// será executado
+
+// só vai executar o bloso CASO(case) um dos blocos seje verdadeiro de acordo com o teste ou parametro colocado no switch
+
+//Exemplo 1
+const fruta = "Abacate";
+switch(fruta){
+    case "Banana":
+        console.log("Banana é a fruta");
+        break // cada case tem que ter um break se nao ele executa os demais tambem
+    
+    case "Maçã":
+        console.log("Maçã é a fruta");
+        break
+    
+    default: // esse é o ultimo bloco, caso nenhum bloco sejem executados
+        console.log("Não encontrei a fruta em nenhum dos casos!");
+}
+
+// Exemplo 2
+const nome = "Arthur";
+switch(nome){
+    case "Vitor":
+        console.log("O seu nome é Vitor!");
+        break;
+    case "Miguel":
+        console.log("Seu nome é Miguel!");
+        break;
+    case "Igor":
+        console.log("Seu nome é Igor");
+        break;
+    case "Arthur":
+        console.log("Seu nome é Arthur!");
+        break;
+    default:
+        console.log("Nenhum dos nomes encontrado nos casos");
+        break;
+}
+
+// Exemplo 3
+const carro = "Mercedes";
+switch(carro){
+    case "Gol":
+        console.log("A marca do carro é Gol!");
+        break;
+    case "Fiat":
+        console.log("A marca do carro é Fiat!");
+        break;
+    case "Ferrari":
+        console.log("A marca do carro é ferrari!");
+        break;
+    case "Bentley":
+        console.log("A marca do carro é um Bentley!");
+        break;
+    case "Mercedes":
+        console.log("A marca do carro é mercedes!");
+        break;
+    default:
+        console.log("Marca de carro nao registrada!")
+        break;
+}
+
+//-----------------------------------------------------------------------------------------------
+
+console.log("estrutura de repeticao - Lacoes de repeticao") //(while, for)
+
+// Vai ser executados quantas vezes forem necessarias de acordo com a condicao imposta
+// 1,2,3,4,5,6,7,8.... => dependendo de uma condicao
+
+/*
+for(contador, condicao de limite, incremento){
+    console.log("alguma coisa")
+}
+
+*/
+
+// for = (Para)
+// contador, condicao de limite, incremento
+for(let i = 0; /*atribuicao de variavel*/ i < 5;/*Teste Logico*/ i = i + 1/*Vai adicionar mais um toda vez que a condicao nao for atendida*/){
+    console.log(`O valor de I é ${i}`);
+}
+
+let s = 0;
+while(s < 5){
+    console.log(`O valor de s é: ${s}`);
+    s++       
+}
+
+// do while
+
+let j = 0
+
+// do = fazer
+// while = enquanto
+// Do while = fazer enquanto...
+
+do{
+    console.log(`O valor de j é de: ${j}`);
+    j++;
+}while(j < 5);
+
+//-----------------------------------------------------------------------------------------------
+
+console.log("Funcoes")
+// fucnoes (salvar um trecho de codigo ára ser usado varias vezes)
+    // function nome (argumento1, argumento2){corpo}
+    // uma funcao só é executada se ela for chamada em alguma parte do codigo
+
+function comprimentar(){
+    console.log("Olá! Bom dia!")
+}
+
+// invocacao = nome()
+
+comprimentar()
+
+//------------------------------------------------------------------------------------------
+
+console.log("Escopo de Variaveis")
+
+/*
+Quando um variavel estiver dentro de um escopo (Estrutura de: repeticao, condicional etc...)
+é uma variavel local, mas quando é executada fora do escopo ela se forna uma variavel global
+ */
+
+let cor = "Azul"; // <- Variavel global
+
+function mostrar_Cor(){
+    let cor = "verde"; // <- Variavel local!
+} // pude declarar ela duas vezes porque ela esta localmente
+//------------------------------------------------------------------------------------------
+
+console.log("Hoisting = Içamento!")
+// Eu consigo chamar a funcao antes dela ser criada!
+
+testeHoisting() // <-- Aqui eu estou chamando a funcao e logo a baixo estou criando ela
+
+function testeHoisting(){
+    console.log("Essa funcao foi criada depois de ser chamada!")
+}
+
+//------------------------------------------------------------------------------------------
+
+console.log("Arrow Function!")
+// Funciona como uma funcao mais resumida!
+
+const testeArrow = (/*Parametros*/) => console.log("Isso tambem é uma funcao!")
+testeArrow()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

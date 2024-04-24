@@ -127,11 +127,11 @@ console.log(meuNumero3)
 //---------------------------------------------------
 
 const meuNumero4 = "123"
-const meuNumeroConvertido3 = Number(meuNumero4)
+const meuNumeroConvertido3 = Number(meuNumero4);
 
-console.log(typeof meuNumeroConvertido3)
-console.log(meuNumeroConvertido3)
-console.log(meuNumero4)
+console.log(typeof meuNumeroConvertido3);
+console.log(meuNumeroConvertido3);
+console.log(meuNumero4);
 
 //---------------------------------------------------
 
@@ -140,40 +140,40 @@ console.log(meuNumero4)
 const idade  = 20
 
 if (idade < 13){
-    console.log("Criança!!")
+    console.log("Criança!!");
 } else if(idade < 20){
-    console.log("Adolecente")
+    console.log("Adolecente");
 } else{
-    console.log("Adulto!!")
+    console.log("Adulto!!");
 }
 
 
 if (false){
-    console.log("Isso será executado!")
+    console.log("Isso será executado!");
 }else{
-    console.log("Isso Será executado!!")
+    console.log("Isso Será executado!!");
 }
 
 //------------------------------------------------------------------------------------------
 
 // Switch case
 
-const fruta = "Maça"
+const fruta = "Maça";
 
 //Vai avaliar a variavel e caso ela for verdade em um dos blocos ela vai executar!!
 
 // Só vai executar o bloco CASO (Case) um dos blocos seje verdadeiro de acordo com o teste ou parametro colocado no switch
 switch(fruta){ 
     case "Banana":
-        console.log("Banana é a fruta")
-        break // Cada Case tem que ter um break se nao ele executa os demais tambemw
+        console.log("Banana é a fruta");
+        break; // Cada Case tem que ter um break se nao ele executa os demais tambemw
     
     case "Maça":
-        console.log("Maça é a fruta")
-        break
+        console.log("Maça é a fruta");
+        break;
 
     default: // Esse é o ultimo bloco, caso nenhum dos blocos sejem executados
-        console.log("Não encontrei a fruta em nenhum dos casos")
+        console.log("Não encontrei a fruta em nenhum dos casos");
 }
 
 //------------------------------------------------------------------------------------------
