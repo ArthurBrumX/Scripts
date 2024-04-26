@@ -367,14 +367,116 @@ console.log("Arrow Function!")
 
 const testeArrow = (/*Parametros*/) => console.log("Isso tambem é uma funcao!")
 testeArrow()
+//------------------------------------------------------------------------------------------
 
+console.log("Truthy e Falsy");
 
+// se a variavel estiver vazia é considerada falsa
+// se a variavel estiver com pelo menos um valor dentro dela, é considerada verdadeira
 
+const minhaVariavel1 = '' // falsy
+const minhaVariavel2 = 'Alguma Coisa!' // Truthy
 
+if(minhaVariavel1){
+    console.log("É Verdadeiro!");
+}else{
+    console.log("É Falso!");
+}
 
+if(minhaVariavel2){
+    console.log("É Verdadeira!");
+}else{
+    console.log("É Falso!");
+}
 
+//------------------------------------------------------------------------------------------
 
+console.log("Arrays (Listas)")
 
+const arrays = ['elemento1','elemento2','elemento3','elemento4'];
+const listaDeNumeros = [1,2,3,4,5,6,7,8,9,10];
+
+console.log(listaDeNumeros);
+
+console.log(listaDeNumeros[0])// para pegar um item especifico da lista
+// lembrando que o js conta os numeros apartir de 0
+
+console.log(listaDeNumeros[1]);
+console.log(listaDeNumeros[2]);
+console.log(listaDeNumeros[3]);
+console.log(listaDeNumeros[4]);
+console.log(listaDeNumeros[5]);
+console.log(listaDeNumeros[6]);
+console.log(listaDeNumeros[7]);
+console.log(listaDeNumeros[8]);
+console.log(listaDeNumeros[9]);
+console.log(listaDeNumeros[10]);
+
+// foi mostrado na tela um elemento de cada vez desse forma
+
+// para adcionar um elemento na lista
+    // NomeDaLista.push(elemento que eu quero adcionar)
+
+// ex:
+
+listaDeNumeros.push(11); // Para colocar um numero
+console.log(listaDeNumeros);
+
+// para tirar um elemento da lista
+    // nomeDaLista.pop(elemento que eu quero remover)
+
+// Ex:
+
+listaDeNumeros.pop(11);
+console.log(listaDeNumeros);
+
+//------------------------------------------------------------------------------------------
+// String
+
+// concatenacao
+const minhaStringNova5 = "Olá, Mundo!"
+const minhaStringNova6 = minhaStringNova5 + " Como Voce está!"; // Concatenacao
+
+console.log(minhaStringNova6)
+
+//------------------------------------------------------------------------------------------
+
+// Interpolacao (Mesma Coisa De Concatenacao)
+
+const minhaStringNova7 = `${minhaStringNova5} como voce Esta? `;
+console.log(minhaStringNova7)
+
+//------------------------------------------------------------------------------------------
+// lenght (contar quantos caracteres tem dentro de uma variavel)
+
+console.log(minhaStringNova7.length)
+console.log(minhaStringNova7[5]) // para olhar um caracter expecifico dentro de uma variavel
+
+//------------------------------------------------------------------------------------------
+console.log("toUpperCase (Deixa as letras em todas maiusculas!")
+console.log(minhaStringNova6.toUpperCase())
+
+//------------------------------------------------------------------------------------------
+
+console.log("toLowerCase (Deixa as letras em todas maiusculas!")
+console.log(minhaStringNova7.toLowerCase())
+
+//------------------------------------------------------------------------------------------
+console.log("Data e Hora!")
+
+const agora = Date()
+console.log(agora)
+
+const natal = new Date(2023,11,25);
+console.log(natal)
+
+//------------------------------------------------------------------------------------------
+// math (para operacoes matematicas)
+
+console.log(Math.PI) // Arredonda o numero pra cimaa
+console.log(Math.round(3.6)) // Arredonda o numero pra cima
+console.log(Math.sqrt(16)) // Raiz Quadrada
+console.log(Math.pow(2,3)) // Pontencia
 
 
 
