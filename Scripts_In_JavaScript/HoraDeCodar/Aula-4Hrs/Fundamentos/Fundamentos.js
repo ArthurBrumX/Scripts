@@ -109,7 +109,7 @@ console.log(meuOutroNumeroConvertido);
 console.log(typeof(meuOutroNumeroConvertido));
 
 const convertendo = "22001010";
-console.log("A variavel Convertendo esta atualmente com o valor: ",convertendo);
+console.log("A variavel *Convertendo* esta atualmente com o valor: ",convertendo);
 console.log("Até aqui essa variavel é uma: ",typeof(convertendo));
 
 const tentandoConverter = Number(convertendo);
@@ -154,9 +154,6 @@ console.log(stringConvertida4,"=",typeof(stringConvertida4));
 
 console.log("Estrutura Condicional"); // If, Else, Else If
 
-// Estrutura Condicional!
-
-
 //Exemplo 1
 const idade = 20; // Variavel declarada com um valor!
 
@@ -179,29 +176,27 @@ if (idade < 13){ // SE (if) o valor da Variavel Idade For MENOR que 13
 }
 
 // ----------------
-
 //Exemplo 2
-
 if(true){
-    console.log("Isso será Exibido!");
+    // O Js Sempre considera esse verdadeiro
+    console.log("Isso será Exibido!"); 
 }else{
+    // E esse como Falso
     console.log("Isso não será Exibido");
 }
 
 // ----------------
-
 //Exemplo 3
-
 if(false){
+    //Se o prametro for invertido a ordem tambem se inverte
+    //Esse agora é falso e o de baixo é verdadeiro
     console.log("Isso nao será Exibido!");
 }else{
     console.log("Porem, Isso será Exibido");
 }
 
 // ----------------
-
 //Exemplo 4
-
 let numero1 = 55;
 let numero2 = 27;
 let expressaoCondicional = numero1 * numero2;
@@ -279,8 +274,7 @@ switch(carro){
         break;
 }
 
-//-----------------------------------------------------------------------------------------------
-
+//-----------------------------------------------------------------------------------------------   
 console.log("estrutura de repeticao - Lacoes de repeticao") //(while, for)
 
 // Vai ser executados quantas vezes forem necessarias de acordo com a condicao imposta
@@ -299,6 +293,7 @@ for(let i = 0; /*atribuicao de variavel*/ i < 5;/*Teste Logico*/ i = i + 1/*Vai 
     console.log(`O valor de I é ${i}`);
 }
 
+// While
 let s = 0;
 while(s < 5){
     console.log(`O valor de s é: ${s}`);
@@ -325,13 +320,23 @@ console.log("Funcoes")
     // function nome (argumento1, argumento2){corpo}
     // uma funcao só é executada se ela for chamada em alguma parte do codigo
 
+//Exemplo 1
 function comprimentar(){
     console.log("Olá! Bom dia!")
 }
 
 // invocacao = nome()
-
 comprimentar()
+
+//Exemplo 2
+function calculoAdicao(){
+    let resultado = a + b;
+    console.log(resultado)
+}
+let a = 5;
+let b = 5;
+calculoAdicao();
+
 
 //------------------------------------------------------------------------------------------
 
