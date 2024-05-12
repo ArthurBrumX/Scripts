@@ -33,22 +33,24 @@ var meuArray = []; //um array é uma lista
 var meuNull = null; // O valor nulo é um valor que no presente momento do codigo ainda nao tem valor, mas em breve vai ter
 var meuUndefined = undefined; // Voce nunca atribui esse valor, isso é quando voce nao da valor pra variavel e nao declara como null
 
-console.log(booleano);
-console.log(meuObjeto);
-console.log(meuArray);
-console.log(meuNull);
-console.log(meuUndefined);
+console.log("Isso é Um:",booleano);
+console.log("Isso é Um:",meuObjeto);
+console.log("Isso é Um:",meuArray);
+console.log("Isso é Um:",meuNull);
+console.log("Isso é Um:",meuUndefined);
 
 // Novas formas de declaracoes de variaveis
     // let e cost = subistitui o var!
         // let = um valor que pode ser alterado durante o programa
         // const = constante (um valor que n muda durante o programa)
 
-let x = 10;
-const y = 5; // essa variavel, não é possivel ser redefinida se nao for aqui!
+var x = 30
+let y = 10;
+const z = 5; // essa variavel, não é possivel ser redefinida se nao for aqui!
 
 console.log(typeof x);
 console.log(typeof y);
+console.log(typeof z);
 console.log(x,y);
 
 //-----------------------------------------------------------------------------------------------
@@ -85,13 +87,13 @@ console.log("Operadores Logicos");
 
 // AND
 // Os dois testes tem que ser verdadeiro
-console.log("&& - E Logico")
+console.log("&& - E Lógico!");
 console.log(10 > 5 && 20 > 5); // Verdadeiro
 console.log(10 < 5 && 20 < 5); // Falso
 console.log(10 > 5 && 20 < 5); // Falso
 console.log(10 < 5 && 20 > 5); // Falso
 
-console.log("&& - E Logico")
+console.log("&& - E Lógico!");
 console.log(10 > 5 || 20 > 5); // Verdadeiro
 console.log(10 > 5 || 20 < 5); // Verdadeiro
 console.log(10 < 5 || 20 > 5); // Verdadeiro
@@ -270,12 +272,12 @@ switch(carro){
         console.log("A marca do carro é mercedes!");
         break;
     default:
-        console.log("Marca de carro nao registrada!")
+        console.log("Marca de carro nao registrada!");
         break;
 }
 
 //-----------------------------------------------------------------------------------------------   
-console.log("estrutura de repeticao - Lacoes de repeticao") //(while, for)
+console.log("Estruturas De Repetição - Laços de Repetição!"); //(while, for)
 
 // Vai ser executados quantas vezes forem necessarias de acordo com a condicao imposta
 // 1,2,3,4,5,6,7,8.... => dependendo de uma condicao
@@ -326,7 +328,7 @@ function comprimentar(){
 }
 
 // invocacao = nome()
-comprimentar()
+comprimentar ()
 
 //Exemplo 2
 function calculoAdicao(){
