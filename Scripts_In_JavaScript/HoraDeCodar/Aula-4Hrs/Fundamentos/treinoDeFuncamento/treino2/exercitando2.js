@@ -1,32 +1,27 @@
-// Fundamentos
+console.log("Fundamentos");
 
-var minhaVariavel = "Olá Mundo!";
+var minhaVariavel = "Olá, Mundo!";
 console.log(minhaVariavel);
+
 //-----------------------------------------------------------------------------------------------
-// Variaveis e Tipos De Dados
+console.log("Variaveis e tipos de dados!");
 
-console.log("Variaveis e Tipos de dados!");
 var meuNumero = 10;
-
 console.log(meuNumero);
-console.log(meuNumero + 5);
+console.log(meuNumero +5);
 console.log(typeof meuNumero);
 
-console.log("Tipos De Dados")
 var booleano = true;
 var meuObjeto = {};
 var meuArray = [];
 var meuNull = null;
 var meuUndefined = undefined;
 
-console.log("Isso é Um:",booleano);
-console.log("Isso é Um:",meuObjeto);
-console.log("Isso é Um:",meuArray);
-console.log("Isso é Um:",meuNull);
-console.log("Isso é Um:",meuUndefined);
-
-//-----------------------------------------------------------------------------------------------
-// Novas formas de declaracao de variaveis
+console.log(booleano);
+console.log(meuObjeto);
+console.log(meuArray);
+console.log(meuNull);
+console.log(meuUndefined);
 
 var x = 30;
 let y = 10;
@@ -35,62 +30,57 @@ const z = 5;
 console.log(typeof x);
 console.log(typeof y);
 console.log(typeof z);
-console.log(x,y,z);
+console.log(x,y);
+//-----------------------------------------------------------------------------------------------
 
-//----------------------------------------------------------------------------------------------
-console.log("Operadores Aritmeticos!");
-
+console.log("Operadores Aritmeticos");
 console.log(x + y);
 console.log(x * y);
 console.log(x / y);
 console.log(x - y);
+//-----------------------------------------------------------------------------------------------
 
-// + -> Adicao;
-// - -> Subtracao;
-// * -> Multiplicacao;
-// / -> Divisao;
+console.log("Operadores de Comparação");
+console.log(x = y);
+console.log(x == y);
+console.log(x === y);
+console.log(x !== y);
 
-//----------------------------------------------------------------------------------------------
-console.log("Operadores de Comparacao!");
+//-----------------------------------------------------------------------------------------------
 
-console.log(x = y,"Atribuicao");
-console.log(x == y,"comparacao");
-console.log(x === y,"Identico");
-console.log(x !== y,"Diferenciacao");
+console.log("Operadores Logicos");
 
-//----------------------------------------------------------------------------------------------
-console.log("Operadores Logicos!");
-
-console.log("&& - e Logico!");
+console.log("&& - E Lógico");
 console.log(10 > 5 && 20 > 5);
-console.log(10 < 5 && 20 < 5);
+console.log(10 < 5 && 10 < 5);
 console.log(10 > 5 && 20 < 5);
 console.log(10 < 5 && 20 > 5);
 
-console.log("|| Ou Logico!");
+console.log("|| - OU Lógico");
 console.log(10 > 5 || 20 > 5);
 console.log(10 > 5 || 20 < 5);
 console.log(10 < 5 || 20 > 5);
 console.log(10 < 5 || 20 < 5);
 
-//----------------------------------------------------------------------------------------------
-console.log("Conversao De Tipos!");
+//-----------------------------------------------------------------------------------------------
+
+console.log("Conversao de tipos");
 
 const meuOutroNumero = "123";
 console.log(meuOutroNumero);
-console.log(typeof(meuOutroNumero));
+console.log(typeof meuOutroNumero);
 
-const meuNumeroConvertido = Number(meuOutroNumero);
-console.log(meuNumeroConvertido);
-console.log(typeof(meuNumeroConvertido));
+const meuOutroNumeroConvertido = Number(meuOutroNumero);
+console.log(meuOutroNumeroConvertido);
+console.log(typeof meuOutroNumeroConvertido)
 
-//----------------------------------------------------------------------------------------------
-console.log("Estruturas Condicionais!");
+//-----------------------------------------------------------------------------------------------
+
+console.log("Estrutura Condicional");
 
 const idade = 20;
-
 if(idade < 13){
-    console.log("Criança!");
+    console.log("Criaça");
 }else if(idade < 20){
     console.log("Adolecente!");
 }else{
@@ -98,61 +88,66 @@ if(idade < 13){
 }
 
 if(true){
-    console.log("Isso será Exibido!");
+    console.log("Isso Será Exibido!");
 }else{
-    console.log("Isso nao sera exebido!");
+    console.log("Isso nao será Exibido");
 }
 
 if(false){
     console.log("Isso nao sera exibido!");
 }else{
-    console.log("Isso será exibido!");
+    console.log("Isso Será Exibido!");
 }
 
-//----------------------------------------------------------------------------------------------
-console.log("Switch case!");
+//-----------------------------------------------------------------------------------------------
+console.log("Switch Case");
 
-const fruta = "Abacate"
+const fruta = "Melao";
 switch(fruta){
     case "Banana":
-        console.log("Banana é a fruta!");
+        console.log("A fruta é Banana!");
         break;
     
-    case "Maçã":
-        console.log("A fruta é  Maçã!");
-        break;
-    
-    case "Abacate":
-        console.log("A fruta é Abacate!");
+    case "Melao":
+        console.log("A fruta é Melao!");
         break;
     
     default:
-        console.log("Não Encontrei a Fruta em Nenhum caso!");
-        break;
+        console.log("Não Encontrei nenhuma fruta!");
+        break
 }
 
-//----------------------------------------------------------------------------------------------
-console.log("Estruturas De Repetição - Laços de Repetição!");
+//-----------------------------------------------------------------------------------------------
 
-//for
+console.log("Estrutura De Repetição");
+
+// for
 for(let i = 0; i < 5; i = i + 1){
     console.log(`O valor de I é ${i}`);
 }
 
-//While
+// While
 let s = 0;
 while(s < 5){
     console.log(`O valor de s é: ${s}`);
-    s++;     
+    s++;
 }
 
-// Do While
-let j = 0
+//Do While
+let j = 0;
 do{
     console.log(`O valor de j é de: ${j}`);
-    j++
+    j++;
 }while(j < 5);
 
-//----------------------------------------------------------------------------------------------
-console.log("Funcoes");
+
+
+
+
+
+
+
+
+
+
 

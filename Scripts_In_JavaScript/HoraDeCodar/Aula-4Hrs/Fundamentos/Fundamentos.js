@@ -22,6 +22,7 @@ Comentario
 // Variaveis e tipos de dados
 
 console.log("Variaveis e tipos de dados");
+
 var meuNumero = 10; 
 console.log(meuNumero); // Só imprime o numero na tela (console)
 console.log(meuNumero + 5); // Soma
@@ -44,7 +45,7 @@ console.log("Isso é Um:",meuUndefined);
         // let = um valor que pode ser alterado durante o programa
         // const = constante (um valor que n muda durante o programa)
 
-var x = 30
+var x = 30;
 let y = 10;
 const z = 5; // essa variavel, não é possivel ser redefinida se nao for aqui!
 
@@ -67,7 +68,7 @@ console.log(x - y); // Operador de subtracao
 // / -> Divisao
 
 //-----------------------------------------------------------------------------------------------
-console.log("Operadores de Comparacao");
+console.log("Operadores de Comparação");
 
 console.log(x = y); // x vai receber o valor de y
 console.log(x == y); // "x é igual a y?" - Retorna um valor booleano
@@ -93,7 +94,7 @@ console.log(10 < 5 && 20 < 5); // Falso
 console.log(10 > 5 && 20 < 5); // Falso
 console.log(10 < 5 && 20 > 5); // Falso
 
-console.log("&& - E Lógico!");
+console.log("|| - OU Lógico!");
 console.log(10 > 5 || 20 > 5); // Verdadeiro
 console.log(10 > 5 || 20 < 5); // Verdadeiro
 console.log(10 < 5 || 20 > 5); // Verdadeiro
@@ -164,7 +165,7 @@ const idade = 20; // Variavel declarada com um valor!
 // Se caso nao houver nenhum verdadeiro o script ignora a expressao
 
 if (idade < 13){ // SE (if) o valor da Variavel Idade For MENOR que 13
-    console.log("Crianca!"); // Se a Condicao de cima for atendida -> Imprima
+    console.log("Criança!"); // Se a Condicao de cima for atendida -> Imprima
 
 //Se caso a alternativa de cima nao seja verdadeira ele vai testar a proxima
 // Até ser verdadeira
@@ -211,7 +212,7 @@ if(expressaoCondicional >= 1000){
 }
 //-----------------------------------------------------------------------------------------------
 
-console.log("Switch case");
+console.log("Switch Case");
 
 // Vai avaliar a variavel e caso ela for verdade em um dos blocos
 // será executado
@@ -290,7 +291,7 @@ for(contador, condicao de limite, incremento){
 */
 
 // for = (Para)
-// contador, condicao de limite, incremento
+// contador, condica de limite, incremento
 for(let i = 0; /*atribuicao de variavel*/ i < 5;/*Teste Logico*/ i = i + 1/*Vai adicionar mais um toda vez que a condicao nao for atendida*/){
     console.log(`O valor de I é ${i}`);
 }
