@@ -21,7 +21,7 @@ Comentario
 
 // Variaveis e tipos de dados
 
-console.log("Variaveis e tipos de dados");
+console.log("Variaveis e Tipos De Dados!");
 
 var meuNumero = 10; 
 console.log(meuNumero); // Só imprime o numero na tela (console)
@@ -55,7 +55,7 @@ console.log(typeof z);
 console.log(x,y);
 
 //-----------------------------------------------------------------------------------------------
-console.log("Operadores Aritmeticos");
+console.log("Operadores Aritmeticos!");
 
 console.log(x + y); // Operador de adicao
 console.log(x * y); // Operador de multiplicacao
@@ -68,7 +68,7 @@ console.log(x - y); // Operador de subtracao
 // / -> Divisao
 
 //-----------------------------------------------------------------------------------------------
-console.log("Operadores de Comparação");
+console.log("Operadores de Comparação!");
 
 console.log(x = y); // x vai receber o valor de y
 console.log(x == y); // "x é igual a y?" - Retorna um valor booleano
@@ -76,7 +76,7 @@ console.log(x === y); // "x é IDENTICO a y?" - retorna um valor booleano
 console.log(x !== y); // "x é IDENTICO a y?" - retorna um valor booleano]
 
 //-----------------------------------------------------------------------------------------------
-console.log("Operadores Logicos");
+console.log("Operadores Logicos!");
 
 // AND -> && (e - Logico (Um teste **E** o outro tem que ser verdadeiro))
     // No operador logico "e" dos dois lados tem que ser verdadeiro para que o resultado seja verdadeiro
@@ -101,15 +101,15 @@ console.log(10 < 5 || 20 > 5); // Verdadeiro
 console.log(10 < 5 || 20 < 5); // Falso
 
 //-----------------------------------------------------------------------------------------------
-console.log("Conversão De Tipos");
+console.log("Conversão De Tipos De Dados!");
 
-const meuOutroNumero = "123"; // Declarando um numero como caractere
-console.log(meuOutroNumero); // Imprimindo ele na tela (console)
-console.log(typeof(meuOutroNumero)); // Imprimindo o tipo dele na tela (console) = String
+const meuNumeroString = "123"; // Declarando um numero como caractere
+console.log(meuNumeroString); // Imprimindo ele na tela (console)
+console.log(typeof meuNumeroString); // Imprimindo o tipo dele na tela (console) = String
 
-const meuOutroNumeroConvertido = Number(meuOutroNumero); // Criou uma nova variavel e atribuiu a outra variavel com o valor convertido!
-console.log(meuOutroNumeroConvertido);
-console.log(typeof(meuOutroNumeroConvertido));
+const meuNumeroStringConvertido = Number(meuNumeroString); // Criou uma nova variavel e atribuiu a outra variavel com o valor convertido!
+console.log(meuNumeroStringConvertido);
+console.log(typeof(meuNumeroStringConvertido));
 
 const convertendo = "22001010";
 console.log("A variavel *Convertendo* esta atualmente com o valor: ",convertendo);
@@ -155,7 +155,7 @@ console.log(stringConvertida4,"=",typeof(stringConvertida4));
 
 //-----------------------------------------------------------------------------------------------
 
-console.log("Estrutura Condicional"); // If, Else, Else If
+console.log("Estrutura Condicional! "); // If, Else, Else If
 
 //Exemplo 1
 const idade = 20; // Variavel declarada com um valor!
@@ -318,23 +318,23 @@ do{
 
 //-----------------------------------------------------------------------------------------------
 
-console.log("Funcoes")
+console.log("Funções");
 // fucnoes (salvar um trecho de codigo ára ser usado varias vezes)
     // function nome (argumento1, argumento2){corpo}
     // uma funcao só é executada se ela for chamada em alguma parte do codigo
 
 //Exemplo 1
 function comprimentar(){
-    console.log("Olá! Bom dia!")
+    console.log("Olá! Bom dia!");
 }
 
 // invocacao = nome()
-comprimentar ()
+comprimentar ();
 
 //Exemplo 2
 function calculoAdicao(){
     let resultado = a + b;
-    console.log(resultado)
+    console.log(resultado);
 }
 let a = 5;
 let b = 5;
@@ -343,7 +343,7 @@ calculoAdicao();
 
 //------------------------------------------------------------------------------------------
 
-console.log("Escopo de Variaveis")
+console.log("Escopo de Variaveis!");
 
 /*
 Quando um variavel estiver dentro de um escopo (Estrutura de: repeticao, condicional etc...)
@@ -354,25 +354,29 @@ let cor = "Azul"; // <- Variavel global
 
 function mostrar_Cor(){
     let cor = "verde"; // <- Variavel local!
+    console.log(cor);
 } // pude declarar ela duas vezes porque ela esta localmente
+
+console.log(cor);
+mostrar_Cor();
 //------------------------------------------------------------------------------------------
 
-console.log("Hoisting = Içamento!")
+console.log("Hoisting = Içamento!");
 // Eu consigo chamar a funcao antes dela ser criada!
 
-testeHoisting() // <-- Aqui eu estou chamando a funcao e logo a baixo estou criando ela
+testeHoisting(); // <-- Aqui eu estou chamando a funcao e logo a baixo estou criando ela
 
 function testeHoisting(){
-    console.log("Essa funcao foi criada depois de ser chamada!")
+    console.log("Essa funcao foi criada depois de ser chamada!");
 }
 
 //------------------------------------------------------------------------------------------
 
-console.log("Arrow Function!")
+console.log("Arrow Function!");
 // Funciona como uma funcao mais resumida!
 
-const testeArrow = (/*Parametros*/) => console.log("Isso tambem é uma funcao!")
-testeArrow()
+const testeArrow = (/*Parametros*/) => console.log("Isso tambem é uma funcao!");
+testeArrow();
 //------------------------------------------------------------------------------------------
 
 console.log("Truthy e Falsy");
@@ -384,15 +388,15 @@ const minhaVariavel1 = '' // falsy
 const minhaVariavel2 = 'Alguma Coisa!' // Truthy
 
 if(minhaVariavel1){
-    console.log("É Verdadeiro!");
+    console.log("Essa Variavel é Verdadeira!");
 }else{
-    console.log("É Falso!");
+    console.log("Essa Variavel é Falsa!");
 }
 
 if(minhaVariavel2){
-    console.log("É Verdadeira!");
+    console.log("Essa Variavel é Verdadeira!");
 }else{
-    console.log("É Falso!");
+    console.log("Essa Variavel é Falsa!");
 }
 
 //------------------------------------------------------------------------------------------
@@ -404,7 +408,7 @@ const listaDeNumeros = [1,2,3,4,5,6,7,8,9,10];
 
 console.log(listaDeNumeros);
 
-console.log(listaDeNumeros[0])// para pegar um item especifico da lista
+console.log(listaDeNumeros[0]);// para pegar um item especifico da lista
 // lembrando que o js conta os numeros apartir de 0
 
 console.log(listaDeNumeros[1]);
@@ -437,52 +441,56 @@ listaDeNumeros.pop(11);
 console.log(listaDeNumeros);
 
 //------------------------------------------------------------------------------------------
-// String
+console.log("Contatenação De String!");
 
-// concatenacao
-const minhaStringNova5 = "Olá, Mundo!"
-const minhaStringNova6 = minhaStringNova5 + " Como Voce está!"; // Concatenacao
+const minhaString = "Olá, Mundo!"
+const minhaStringConcatenada = minhaString + " Como Voce está!"; // Concatenacao
 
-console.log(minhaStringNova6)
-
-//------------------------------------------------------------------------------------------
-
-// Interpolacao (Mesma Coisa De Concatenacao)
-
-const minhaStringNova7 = `${minhaStringNova5} como voce Esta? `;
-console.log(minhaStringNova7)
-
-//------------------------------------------------------------------------------------------
-// lenght (contar quantos caracteres tem dentro de uma variavel)
-
-console.log(minhaStringNova7.length)
-console.log(minhaStringNova7[5]) // para olhar um caracter expecifico dentro de uma variavel
-
-//------------------------------------------------------------------------------------------
-console.log("toUpperCase (Deixa as letras em todas maiusculas!")
-console.log(minhaStringNova6.toUpperCase())
+console.log(minhaStringConcatenada);
 
 //------------------------------------------------------------------------------------------
 
-console.log("toLowerCase (Deixa as letras em todas maiusculas!")
-console.log(minhaStringNova7.toLowerCase())
+console.log("Interpolacao (Mesma Coisa De Concatenacao");
+
+const minhaStringInterpolada = `${minhaString} como voce Esta? `;
+console.log(minhaStringInterpolada);
 
 //------------------------------------------------------------------------------------------
-console.log("Data e Hora!")
+console.log("Lenght (contar quantos caracteres tem dentro de uma variavel");
 
-const agora = Date()
-console.log(agora)
+console.log(minhaStringInterpolada.length)
+console.log(minhaStringInterpolada[5]) // para olhar um caracter expecifico dentro de uma variavel
+
+//------------------------------------------------------------------------------------------
+console.log("ToUpperCase && ToLowerCase!");
+
+let frase = "O Rato Comeu a Roupa";
+
+console.log("A frase normal!");
+console.log(frase);
+
+console.log("toUpperCase (Deixa as letras em todas maiusculas!");
+console.log(frase.toUpperCase());
+
+console.log("toLowerCase (Deixa as letras em todas maiusculas!");
+console.log(frase.toLowerCase());
+
+//------------------------------------------------------------------------------------------
+console.log("Data e Hora!");
+
+const agora = Date();
+console.log(agora);
 
 const natal = new Date(2023,11,25);
-console.log(natal)
+console.log(natal);
 
 //------------------------------------------------------------------------------------------
-// math (para operacoes matematicas)
+console.log("math (para operacoes matematicas)")
 
-console.log(Math.PI) // Arredonda o numero pra cimaa
-console.log(Math.round(3.6)) // Arredonda o numero pra cima
-console.log(Math.sqrt(16)) // Raiz Quadrada
-console.log(Math.pow(2,3)) // Pontencia
+console.log(Math.PI); // Arredonda o numero pra cimaa
+console.log(Math.round(3.6)); // Arredonda o numero pra cima
+console.log(Math.sqrt(16));// Raiz Quadrada
+console.log(Math.pow(2,3)); // Pontencia
 
 
 
